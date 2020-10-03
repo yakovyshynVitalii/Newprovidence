@@ -1,16 +1,16 @@
 footer {
   margin: 0 auto;
   max-width: 1170px;
-  background-image: #f4f4f5 center/cover;
-  background-repeat: no-repeat;
+  line-height: 1;
 }
 /* First SECTION */
 .footer_section {
-  border-top: 0.3px #8c8f94 ridge;
+  border-top: 0.3px #d8dbe2 ridge;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 120px;
+  font-family: "Lato", sans-serif;
 }
 
 .footer_section_social {
@@ -18,7 +18,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-right: 300px;
-  margin-left: 50px;
+  margin-left: 5px;
 }
 
 .footer_social_text {
@@ -28,10 +28,73 @@ footer {
   line-height: 24px;
   color: #8c8f94;
   font-weight: 400;
-  font-family: "Lato", sans-serif;
   width: 270px;
   height: 116px;
   text-align: left;
+}
+
+.footer_social_button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #231f20;
+  position: relative;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 45px;
+  width: 145px;
+}
+
+.footer_social_button .fa-apple {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.footer_button_p1 .footer_button_p2 {
+  position: absolute;
+  left: 70px;
+}
+
+.footer_button_p1 {
+  top: 20px;
+  font-size: 10px;
+  text-align: end;
+}
+
+.footer_button_p2 {
+  top: 35px;
+  font-size: 16px;
+}
+
+.footer_social_button:hover {
+  /* background-color: #fff;
+  color: #231f20;
+  border: 1px solid #231f20; */
+  filter: invert(100%);
+}
+
+/* .footer_social_button:active {
+  color: black(255, 255, 255);
+  border-color: #8c8f94;
+} */
+
+/* видалити якщо не треба */
+.footer_button_items {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* видалити якщо не треба */
+.footer_button_li {
+  display: inline-block;
+  margin: 10px;
 }
 
 .footer_social_box_icons {
@@ -40,17 +103,20 @@ footer {
 
 .footer_social_icon {
   padding-right: 20px;
+  color: #8c8f94;
 }
 
 .footer_contant {
   display: flex;
-  font-family: "Lato", sans-serif;
   margin-top: 88px;
 }
 
 .footer_boxs_menu {
-  font-family: "Lato", sans-serif;
-  margin-right: 50px;
+  margin-right: 60px;
+}
+
+.footer_boxs_items {
+  list-style: none;
 }
 
 .footer_btn_menu {
@@ -85,7 +151,7 @@ footer {
 
 /* Second  SECTION */
 .footer_section_two {
-  border-top: 0.3px #8c8f94 solid;
+  border-top: 0.3px #d8dbe2 solid;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -102,7 +168,7 @@ footer {
   font-weight: 400;
   font-family: "Lato", sans-serif;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 5px;
 }
 
 .footer_http {
@@ -118,7 +184,7 @@ footer {
   font-weight: 700;
   margin-bottom: 25px;
   margin-top: 24px;
-  margin-right: 50px;
+  margin-right: 10px;
   font-family: "Lato", sans-serif;
 }
 
@@ -132,7 +198,7 @@ footer {
   }
 
   .footer_section_social {
-    margin-right: 30px;
+    margin-right: 150px;
   }
 }
 
@@ -146,12 +212,15 @@ footer {
 
   .footer_section_social {
     text-align: center;
+    align-items: center;
     margin-right: 0;
     margin-left: 0px;
   }
 
   .footer_contant {
     margin-right: 0px;
+    margin-top: 30px;
+    padding: 20px;
   }
 
   .footer_social_text {
@@ -160,11 +229,6 @@ footer {
 
   .footer_social_box_icons {
     margin-top: 20px;
-  }
-
-  .footer_contant {
-    padding: 20px;
-    margin-left: 0px;
   }
 
   .footer_boxs_menu {
